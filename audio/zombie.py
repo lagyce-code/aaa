@@ -46,15 +46,15 @@ banded_users = []
 off =None
 
 
-DOWNLOAD_FOLDER = "/root/downloads"
-BACKUP_ZIP = "/root/downloads_backup.zip" 
+DOWNLOAD_FOLDER = "/downloads"
+BACKUP_ZIP = "downloads_backup.zip" 
 os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
 
-photos_FOLDER = "/root/photos"
-BACKJUP_ZIP = "/root/photos_backup.zip" 
+photos_FOLDER = "photos"
+BACKJUP_ZIP = "photos_backup.zip" 
 os.makedirs(photos_FOLDER, exist_ok=True)
 
-with open('/root/hamo/config.json', 'r', encoding='utf-8') as file:
+with open('config.json', 'r', encoding='utf-8') as file:
     config = json.load(file)
 
 Source_name = config['Source_name']
